@@ -5,62 +5,114 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
     font-size: 17px;
 }
 
-/* Header, Navbar */
-header{
-    background: #73D2DE;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
+
+/* Header, Navbar */
 nav{
+    background: #73D2DE;
+    height: 80px;
+    width: 100%;
+}
+
+
+label.logo i{
+    font-size: 25px;
+}
+
+label.logo{
+    color: #D81159;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #D81159;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
 
+nav ul li a:hover{
+    color: #df84a6;
+}
 
-header ul li{
+.checkbtn i{
+    font-size: 30px;
     color: #D81159;
-    list-style: none;
-    display: inline;
-    margin-left: 10px;
-}
-header ul li a{
-    color: #D81159;
-    text-decoration: none;
-    list-style: none;
 }
 
-header ul li a:hover{
-    /* color: #08415C; */
+.checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 10px;
+        padding: 0 10px;
+    }
 
-.laptop{
-    align-content: flex-start;
+    nav ul li a{
+        font-size: 16px;
+    }
 }
 
-.laptop i{
-    font-size: 45px;
-    color: #D81159;
+@media (max-width: 562px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2C3E50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
 
-}
+    nav ul li{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover{
+        color: #73D2DE;
+    }
 
-.laptop h1{
-    vertical-align: 20%;
-    color: #D81159;
-    height: 100%;
-    display: inline;
-    padding-left: 5px;
-    font-size: 20px;
-}
+    #check:checked ~ ul{
+        left: 0;
+    }
 
-.laptop a{
-    text-decoration: none;
-    color: none;
 }
