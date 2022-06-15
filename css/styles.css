@@ -30,7 +30,7 @@ label.logo i{
 
 label.logo{
     color: #D81159;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 80px;
     padding: 0 10px;
     font-weight: bold;
@@ -115,4 +115,52 @@ nav ul li a:hover{
         left: 0;
     }
 
+}
+
+/* FIM HEADER */
+
+/* SOBRE MIM CONTAINER */
+.about-me-container{
+    width: 100%;
+    height: 100%;
+    background: #218380;
+    padding: 70px;
+}
+
+.img img{
+    border-radius: 50%;
+    float: left;    
+    margin-right: 50px;
+}
+
+
+.txt{
+   margin-left: 20px;
+   color:aliceblue;
+}
+
+.txt h1{
+    font-size: 30px;
+    color: #D81159;
+}
+
+.txt p{
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.txt a{
+    color: #D81159;
+}
+
+/* Ajustes Mobile */
+@media(max-width:920px){
+    .img img{
+        /* float: none; */
+    }
+    .txt p,
+    .txt h1{
+        text-align: center;
+    }
 }
