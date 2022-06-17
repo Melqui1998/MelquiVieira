@@ -20,6 +20,7 @@ body{
 
 /* Header, Navbar */
 nav{
+
     background: #73D2DE;
     height: 80px;
     width: 100%;
@@ -78,7 +79,7 @@ nav ul li a:hover{
 }
 
 
-@media(max-width: 952px){
+@media(max-width: 650px){
     label.logo{
         padding-left: 10px;
     }
@@ -102,6 +103,25 @@ nav ul li a:hover{
     margin-left: 0;
 }
 
+    div.card-conhecimentos{
+        margin-top: 300px;
+        margin: 300px 5% 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.card{
+        margin-bottom: 90px;
+    }
+    div.card ul{
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card li{
+        width: 100%;
+        text-align: center;
+    }
 
 }
 
@@ -109,7 +129,7 @@ nav ul li a:hover{
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -174,7 +194,7 @@ nav ul li a:hover{
 /* MEUS CONHECIMENTOS */
 div.knowledge-container{
     max-width: 800px;
-    margin: 20px auto 100px auto;
+    margin: 20px auto 60px auto;
     text-align: center;
 }
 
@@ -190,26 +210,95 @@ div.knowledge-container p{
 
 /* CARDS Conhecimentos */
 .card-conhecimentos{
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto 1000px;
     /* border: 1px solid orchid; */
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-around;
+    height: 390px;     
 }
 
-.card{
-    /* border: 1px solid darkblue; */
+.card-conhecimentos h3{
+    margin-top: 30px;
 }
 
+/* Ambos os Cards */
+div.card{
+    /* color: #FFF; */
+    height: 100%;
+}
+
+.bi-server::before,
+.bi-display::before{
+    /* background: #218380; */
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.bi-display::before{
+    color: #73D2DE;
+    background: #D81159;
+}
+
+
+.bi-server::before{
+    color: #D81159;
+    background: #73D2DE;
+}
+
+
+.card ul{
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+.card li{
+    margin-top: 15px;
+}
+
+/* Card frontend */
+.front-card{
+    width: 100%;
+    background: #73D2DE;
+    color: #D81159;
+}
+/* Card backend */
+.back-card{
+    width: 100%;
+    background: #D81159;
+    color: #73D2DE  ;
+}
+
+
+div.card li i{
+    display: inline;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    color: #2C3E50;
+}
+
+div.card li i{
+    position: static;
+    margin-right: 5px;
+    font-size: 1em;
+    color: #D81159;
+}
+
+div.card.back-card li i{
+    color: #73D2DE;
+}
 .card i{
     position: relative;
     top: -30px;
     display: flex;
     justify-content: center;
     font-size: 60px;
-    color: #D81159;
+    padding: 0;
 }
+
+
 
 .card h3{   
     text-align: center;
