@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 *{
@@ -9,6 +8,7 @@
     list-style: none;
     box-sizing: border-box;
     font-size: 17px;
+    font-weight: 400;
 }
 
 body{
@@ -17,15 +17,30 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h2{
+    font-size: 25px;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+p{
+    font-size: 17px;
+    margin:1px 0;
+}
 
 /* Header, Navbar */
-nav{
-
+.header{
     background: #73D2DE;
     height: 80px;
     width: 100%;
 }
 
+nav{
+    max-width: 1800px;
+    margin: 0 auto;
+}
 
 label.logo i{
     font-size: 25px;
@@ -101,11 +116,11 @@ nav ul li a:hover{
 
   .row.about-me-txt{
     margin-left: 0;
-}
+  }
 
     div.card-conhecimentos{
         margin-top: 300px;
-        margin: 300px 5% 0;
+        margin: 300px 5% 250px;
         flex-direction: column;
         align-items: center;
     }
@@ -125,6 +140,9 @@ nav ul li a:hover{
 
 }
 
+
+
+
 @media (max-width: 562px){
     .checkbtn{
         display: block;
@@ -138,6 +156,7 @@ nav ul li a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
     }
 
     nav ul li{
@@ -151,14 +170,13 @@ nav ul li a:hover{
     #check:checked ~ ul{
         left: 0;
     }
-
 }
 
 /* FIM HEADER */
 
 /* SOBRE MIM CONTAINER */
 .about-me-container{
-    padding: 5% 10%;
+    padding: 2%;
     background: #218380;
     color: aliceblue;
     display: flex;
@@ -193,25 +211,16 @@ nav ul li a:hover{
 
 /* MEUS CONHECIMENTOS */
 div.knowledge-container{
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto 60px auto;
     text-align: center;
 }
 
-div.knowledge-container h2{
-    font-size: 25px;
-}
-
-div.knowledge-container p{
-    margin: 30px auto;
-    padding:  0 5% ;
-    font-size: 15px;
-}
 
 /* CARDS Conhecimentos */
 .card-conhecimentos{
     max-width: 600px;
-    margin: 0 auto 1000px;
+    margin: 0 auto 100px;
     /* border: 1px solid orchid; */
     display: flex;
     align-items: center;
@@ -296,6 +305,7 @@ div.card.back-card li i{
     justify-content: center;
     font-size: 60px;
     padding: 0;
+
 }
 
 
@@ -305,4 +315,43 @@ div.card.back-card li i{
     margin-bottom: 10px;
     font-size: 20px;
     text-transform: uppercase;
+}
+
+
+/* PORTIFÓLIO */
+.projects-container{
+    max-width: 1800px;
+    margin: 0 auto;
+    border: 1px solid red;
+    margin-bottom: 500px;
+    text-align: center;
+}
+.projects-text{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+ul.project-menu{
+    margin: 30px auto;
+    max-width: 800px;
+    display: flex;   
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-menu a{
+    margin: 0 4px;
+    font-size: 18px;
+    color: #2C3E50;
+    padding: 7px 5px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.project-menu .active a{
+    background-color: #73D2DE;
+}
+.project-menu a:hover{
+    background-color: #e6e6e6;
 }
