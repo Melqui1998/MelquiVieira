@@ -319,6 +319,8 @@ div.card.back-card li i{
 
 
 /* PORTIFÓLIO */
+
+
 .projects-container{
     max-width: 1800px;
     margin: 0 auto;
@@ -330,7 +332,6 @@ div.card.back-card li i{
     max-width: 900px;
     margin: 0 auto;
 }
-
 
 ul.project-menu{
     margin: 30px auto;
@@ -349,9 +350,34 @@ ul.project-menu{
     transition: .2s;
 }
 
-.project-menu .active a{
-    background-color: #73D2DE;
-}
 .project-menu a:hover{
     background-color: #e6e6e6;
+}
+
+.active{
+    background-color: #73D2DE;
+}
+
+/* PORTIFÓLIO CARDS */
+.tabcontent{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.project-card{
+    min-width: 350px;
+    border: 1px salmon solid;
+    
+}
+
+@media(max-width: 1100px){
+    .tabcontent{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    .projects-container{
+        max-width: 95%;
+    }
 }

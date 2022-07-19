@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="js/scripts.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Melqui Vieira - Dev/ Graphic Designer</title>
 </head>
@@ -81,17 +81,58 @@
             </p>
         </div>
             <ul class="project-menu">
-                <li class="active"><a href="">Todos</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Landing Pages</a></li>
-                <li><a href="">Componentes Web</a></li>
-                <li><a href="">Clones</a></li>
+                <li><a class="tablinks" id="defaultOpen" onclick="openTab(event, 'todos')">Todos</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'games')">Games</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'pages')">Pages</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'landing-pages')">Landing Pages</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'componentes-web')">Componentes Web</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'clones')">Clones</a></li>
             </ul>
 
 
-    </div>
+    <!-- content -->
+
+        <div id="todos" class="tabcontent">
+            <div class="project-card">
+                Card 1
+            </div>
+
+            <div class="project-card">
+                Card 2
+            </div>
+
+            <div class="project-card">
+                Card 3
+            </div>
 
 
+
+
+
+
+        </div>
+
+        <div id="games" class="tabcontent">
+            <h3>games</h3>
+        </div>
+
+        <div id="pages" class="tabcontent">
+            <h3>Pages</h3>
+        </div>
+
+        <div id="landing-pages" class="tabcontent">
+            <h3>Landing Pages</h3>
+        </div>  
+
+        <div id="componentes-web" class="tabcontent">
+            <h3>Componentes Web</h3>
+        </div>  
+
+        <div id="clones" class="tabcontent">
+            <h3>Clones</h3>
+        </div> 
+
+
+</div>
 </body>
 </html>
