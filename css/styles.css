@@ -326,7 +326,7 @@ div.card.back-card li i{
 .projects-container{
     max-width: 1800px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 50px;
     text-align: center;
 }
@@ -378,7 +378,7 @@ ul.project-menu{
 .project-card{
     width: 300px;
     height: 300px;
-    border: 1px salmon solid;
+    /* border: 1px salmon solid; */
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -506,7 +506,7 @@ ul.project-menu{
 .contact-content{
     max-width: 1200px;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -524,6 +524,11 @@ ul.project-menu{
 .contact-form input{
     margin-bottom: 20px;
 }
+
+textarea {
+    resize: none;
+  }
+
 
 .contact-form 
 input[type=text]{
@@ -557,6 +562,8 @@ textarea:focus, input:focus{
     padding: 5px;
     cursor: pointer;
     border-radius: 15px;
+    width: 90%;
+    align-self: center;
 }
 
 .media-icons a i{
@@ -589,7 +596,21 @@ textarea:focus, input:focus{
         flex-wrap: wrap;
     }
 
+    .contact-form{
+        align-items: center;
+        padding: 0 5%;
+    }
+
     .social-link{
         margin-bottom: 50px;
+    }
+
+    .contact-form textarea,
+    .contact-form input[type=text] {
+        width: 90%;
+    }
+
+    .contact-form label{
+        align-self: flex-start;
     }
 }
