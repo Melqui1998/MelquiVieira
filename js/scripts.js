@@ -5,17 +5,25 @@ function openTab (evt, tabName){
     let tabContent = document.getElementsByClassName('tabcontent');
     let tabLinks = document.getElementsByClassName('tablinks');
 
-// Get all elements with class="tabcontent" and hide them
+
 for (let i=0; i<tabContent.length; i++){
     tabContent[i].style.display = 'none';
 }
 
-// Get all elements with class="tablinks" and remove the class "active"
     for (let i=0; i<tabLinks.length; i++){
         tabLinks[i].className = tabLinks[i].className.replace("active", " ");
 }
 
-// Show the current tab, and add an "active" class to the button that opened the tab
 document.getElementById(tabName).style.display = "flex";
 evt.currentTarget.className += " active";
 }
+
+/*Objeto Projeto:
+Nome: String Adimo Imóveis
+Tecnologias: String[]: ['html', 'css', 'js'];
+Tipo: String = 'Website;
+Descricao: String = lorem15
+Link: String https://www.google.com/
+BgImage: string = url(../img/predio.png);*/
+
+//PROJETOS
