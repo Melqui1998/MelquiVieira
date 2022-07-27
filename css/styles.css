@@ -32,7 +32,7 @@ p{
 /* Header, Navbar */
 .header{
     background: #73D2DE;
-    height: 80px;
+    height: 90px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -45,6 +45,11 @@ nav{
 }
 
 label.logo i{
+    font-size: 25px;
+}
+
+#melqui{
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -85,8 +90,8 @@ nav ul li a:hover{
 
 .checkbtn{
     float: right;
-    line-height: 70px;
-    margin-right: 40px;
+    line-height: 80px;
+    margin-right: 20px;
     cursor: pointer;
     display: none;
 }
@@ -121,13 +126,12 @@ nav ul li a:hover{
   }
 
     div.card-conhecimentos{
-        margin-top: 300px;
-        margin: 300px 5% 250px;
+        margin: 400px 5% 250px;
         flex-direction: column;
         align-items: center;
     }
     div.card{
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
     }
     div.card ul{
         margin-left: 0;
@@ -137,7 +141,7 @@ nav ul li a:hover{
     }
     .card li{
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
 
 }
@@ -260,8 +264,7 @@ div.card{
 
 
 .card ul{
-    margin-bottom: 30px;
-    margin-left: 10%;
+    padding: 0 10% 10%;
 }
 
 .card li{
@@ -498,13 +501,13 @@ ul.project-menu{
 
 .social-link p,
 .social-link h2{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .social-link p{
-    padding: 0 20%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10%;
 }
 
 .social-link .media-icons,
@@ -514,20 +517,19 @@ ul.project-menu{
 
 
 .contact-content{
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     /* border: 1px solid white; */
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    padding: 70px 0;
+    justify-content: space-between;
+    padding: 70px 3%;
 }
 
 .contact-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 5%;
 }
 
 .contact-form textarea,
@@ -553,6 +555,12 @@ textarea::placeholder,
 input[type=text]::placeholder{
     color: rgb(224, 224, 224);
 }
+
+input[type=text]:focus::placeholder,
+textarea:focus::placeholder{
+    color: transparent;
+}
+
 
 textarea:focus, input:focus{
     outline: none;
@@ -623,4 +631,11 @@ textarea:focus, input:focus{
     .contact-form label{
         align-self: flex-start;
     }
+}
+
+@media(max-width: 300px){
+    #melqui{
+        display: none;
+    }
+
 }
