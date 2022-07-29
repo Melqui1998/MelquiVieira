@@ -394,7 +394,7 @@ ul.project-menu{
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -402,15 +402,19 @@ ul.project-menu{
     justify-content: space-evenly;
 }
 
-.project-footer a{
+.project-footer h3{
+    color: #000;
+}
+
+.project-footer li h3{
     cursor: pointer;
     display: block;
     font-size: 17px;
     text-decoration: none;
-    color: black;
+    color: #FFF;
 }
 
-.project-footer a:hover{
+.project-footer h3:hover{
     text-decoration: underline;
 }
 
@@ -426,10 +430,9 @@ ul.project-menu{
     background: gray;
     padding: 2px 7px;
     border-radius: 15px;
-
 }
 
-.project-footer li a{
+.project-footer li {
     font-size: 15px;
     color: #FFF;
 }
@@ -440,7 +443,8 @@ ul.project-menu{
     background-size: cover;
     background-image: url(../img/preio.png);
     background-position: center;*/
-    position: relative; 
+    position: relative;
+    height: 220px;
 }
 
 .project-image img{
@@ -464,6 +468,7 @@ ul.project-menu{
     color: #FFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .tabcontent :hover .card-overlay{
@@ -472,7 +477,7 @@ ul.project-menu{
 
 .card-overlay p,
 .card-overlay h3{
-    margin-bottom: 5%;
+    
 }
 
 .card-overlay a{
