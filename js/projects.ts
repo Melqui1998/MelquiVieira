@@ -51,14 +51,13 @@ enum TipoProjeto{
 
 
 
-
-
 let projects = [
     {
         nome: 'Adimo Imóveis',
         tecnologias: ['html', 'css', 'javascript', 'node.js'],
         tipo: TipoProjeto[TipoProjeto.Page],
-        descricao: 'Projeto em grupo da faculdade. Site instituicional para imobiliária',
+        descricao: 'Projeto em grupo da faculdade. Site instituicional para imobiliária ' + 
+        'desenvolvido desde os logos e paleta de cores.',
         link: 'https://pages.github.com/',
         bgImage: 'cpm22.jpg'
     }
@@ -135,7 +134,8 @@ function loadProjects(){
         projectDiv.appendChild(projectImgDiv);
         projectDiv.appendChild(projectFooter);
         
-        todos.appendChild(projectDiv)
+        todos.appendChild(projectDiv);
+        
     }
     
 }
