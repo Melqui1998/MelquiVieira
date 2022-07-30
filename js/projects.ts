@@ -48,7 +48,7 @@ enum TipoProjeto{
     'ComponenteWeb',
     'Clone'
 };
-
+   
 
 
 let projects = [
@@ -60,7 +60,25 @@ let projects = [
         'desenvolvido desde os logos e paleta de cores.',
         link: 'https://pages.github.com/',
         bgImage: 'cpm22.jpg'
-    }
+    },
+    {
+        nome: 'Quiz SQL',
+        tecnologias: ['HTLM', 'CSS', 'TypeScript', 'Javascript'],
+        tipo: TipoProjeto[TipoProjeto.Game],
+        descricao: 'Teste com 5 perguntas para avaliar seus conhecimentos' + 
+        'na linguagem SQL.',
+        link: 'https://friv.com/',
+        bgImage: 'quiz.png'
+    },
+    {
+        nome: 'Jogo da Forca',
+        tecnologias: ['HTLM', 'CSS', 'TypeScript', 'Javascript'],
+        tipo: TipoProjeto[TipoProjeto.Game],
+        descricao: 'O Jogo da forca clássico, tente adivinhar qual a palavra' + 
+        'antes de ser enforcado',
+        link: 'https://clickjogos.com/',
+        bgImage: 'forca.jpg'
+    },
 ];
 
 function loadProjects(){
@@ -121,21 +139,35 @@ function loadProjects(){
                     technologiesListItem.appendChild(technologieItem);
                     technologiesList.appendChild(technologiesListItem);           
                 }
-            
-                    
-                
-
-                
-
-//        projectDiv.appendChild(projectImgDiv);
+  
                 projectFooter.appendChild(projectType);                
                 projectFooter.appendChild(technologiesList);
 
         projectDiv.appendChild(projectImgDiv);
         projectDiv.appendChild(projectFooter);
         
-        todos.appendChild(projectDiv);
         
+        
+        todos.appendChild(projectDiv);
+        let div2 = projectDiv.cloneNode(true);
+        console.log(tipo);
+        switch(tipo){
+            case('Game'):
+              document.querySelector('#games')?.appendChild(div2)
+              break;
+
+            case('Page'):
+                document.querySelector('#pages')?.appendChild(div2);
+                break;
+            // case('LandingPage'):
+            //     document.querySelector('#landing-pages')?.appendChild(div2);
+            
+            // case('ComponenteWeb'):
+            //     document.querySelector('#componentes-web')?.appendChild(div2);
+
+            // case('Clone'):
+            //     document.querySelector('#clones')?.appendChild(div2);
+        }
     }
     
 }

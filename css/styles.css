@@ -428,12 +428,12 @@ ul.project-menu{
 
 .project-footer li{
     background: gray;
-    padding: 2px 7px;
-    border-radius: 15px;
+    padding: 1px 4px;
+    border-radius: 10px;
 }
 
 .project-footer li {
-    font-size: 15px;
+    font-size: 11px;
     color: #FFF;
 }
 
@@ -617,6 +617,7 @@ textarea:focus, input:focus{
     }
     .contact-content{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .contact-form{
