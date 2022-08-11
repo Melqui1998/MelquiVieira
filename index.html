@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav >
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="bi bi-list"></i>
@@ -20,31 +20,32 @@
                 <i class="bi bi-code-square"></i><span id="melqui"> MelquiVieira</span>
             </label>
             <ul>
-                <li><a href="index.html">Sobre Mim</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
         <!-- CARD SOBRE MIM -->
-    <div class="about-me-container">
+    <div class="about-me-container" id="sobre">
         <div class="row">
-            <img src="img/me.jfif" alt="Foto Pessoal">
+            <img src="img/mv_foto.jp" id="profile-photo" alt="Foto Pessoal">
         </div>
         <div class="row about-me-txt">
             <p>Olá, me chamo</p>
             <h1>Melqui Vieira</h1>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quaerat aspernatur
-                dignissimos enim. <a href="#">Nostrum</a>, exercitationem dolores! <a href="#">Dolorem</a> labore nobis provident
-                similique rerum quod doloremque, <a href="">veritatis</a> temporibus. Natus aliquam quis eum
-                consequatur fugiat ratione maxime atque <a href="">aspernatur</a>. Beatae autem laboriosam magnam?
+                Sou web developer e estudante de Análise e Desenvolvimento de sistemas no Centro Universitário Senac.
+                Este é meu website pessoal com o objetivo de apresentar um pouco dos conhecimentos que venho adiquirindo.
+                Confira a sessão de <a href="#">Projetos</a>, abaixo e entre em <a href="#">contato</a> se precisar.
             </p>
         </div>
     </div>
     <div class="knowledge-container">
         <h2>Tecnologias</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, facere? Impedit
+
+        <p>Sou um desenvolvedor em formação e gosto bastante do ecossistema JavaScript,
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, facere? Impedit
             hic suscipit eveniet iure sequi quo ipsam minima. Suscipit iusto, saepe eum placeat
             earum libero labore veniam aliquid expedita! Lorem ipsum dolor sit. <a href="">Lorem ipsum dolor sit amet</a>.
         </p>
@@ -55,35 +56,37 @@
             <i class="bi bi-display head-card"></i>
             <h3>Frontend</h3>
             <ul>
-                <li><i class="bi bi-check-circle-fill"></i>HTML, CSS & JavaScript/</li>
-                <li><i class="bi bi-check-circle-fill"></i>Boostrap</li>
-                <li><i class="bi bi-check-circle-fill"></i>Node.Js</li>
+                <li><i class="bi bi-check-circle-fill"></i>HTML, CSS & Boostrap</li>
+                <li><i class="bi bi-check-circle-fill"></i>JQuery, JavaScript/ TypeScript</li>
+                <!-- <li><i class="bi bi-check-circle-fill"></i>Node.Js</li>
                 <li><i class="bi bi-check-circle-fill"></i>React.js</li>
-                <li><i class="bi bi-check-circle-fill"></i>Wordpress</li>
+                <li><i class="bi bi-check-circle-fill"></i>Wordpress</li> -->
             </ul>
         </div>
         <div class="card back-card">
             <i class="bi bi-server"></i>
             <h3>Backend</h3>
             <ul>
-                <li><i class="bi bi-check-circle-fill fa-inverse"></i>MySQL</li>
-                <li><i class="bi bi-check-circle-fill"></i>Mongo DB</li>
-                <li><i class="bi bi-check-circle-fill"></i>Java/ Springboot</li>
-                <li><i class="bi bi-check-circle-fill"></i>Lorem, ipsum dolor.</li>
+                <li><i class="bi bi-check-circle-fill fa-inverse"></i>Java</li>
+                <li><i class="bi bi-check-circle-fill"></i>MySQL/ PostgreSQL</li>
+                <!-- <li><i class="bi bi-check-circle-fill"></i>Java/ Springboot</li> -->
+                <!-- <li><i class="bi bi-check-circle-fill"></i>Lorem, ipsum dolor.</li> -->
             </ul>
         </div>
     </div>
 
-    <div class="projects-container">
-        <div class="projects-text">
-            <h2>Projetos</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, facere? Impedit
-                hic suscipit eveniet iure sequi quo ipsam minima. Suscipit iusto, saepe eum placeat
+    <div class="projects-container"  id="projetos">
+        <div class="projects-text" >
+            <h2 >Projetos</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, facere? Impedit
+                hic suscipit eveniet iure sequi quo ipsam minima. Suscipit iusto, saepe eum placeat.
+                Os codigos-fonte dos projetos estão disponíveis no meu <a href="#">github</a>.
             </p>
         </div>
             <ul class="project-menu">
                 <li><a class="tablinks" id="defaultOpen" onclick="openTab(event, 'todos')">Todos</a></li>
-                <li><a class="tablinks" onclick="openTab(event, 'games')">Games</a></li>
+                <li><a class="tablinks" onclick="openTab(event, 'games')">Jogos</a></li>
                 <li><a class="tablinks" onclick="openTab(event, 'pages')">Pages</a></li>
                 <li><a class="tablinks" onclick="openTab(event, 'landing-pages')">Landing Pages</a></li>
                 <li><a class="tablinks" onclick="openTab(event, 'componentes-web')">Componentes Web</a></li>
@@ -139,7 +142,7 @@
 </div>
 
     <!-- CONTATO -->
-    <div class="contact-container">
+    <div class="contact-container" id="contato">
         <div class="contact-content">
             <div class="social-link">
                 <h2>Contato</h2>

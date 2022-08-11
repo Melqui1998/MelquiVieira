@@ -10,8 +10,19 @@
     font-weight: 400;
 }
 
+:root{
+    --primary: #73D2DE;
+    --color2: #D81159;
+    --color3: #218380;
+    --color4: #2C3E50;
+    --myblack: rgb(88, 103, 124);
+}
+
+
+
+
 body{
-    color: rgb(88, 103, 124);
+    color: var(--myblack);
     background: #f5f6f8;
     font-family: 'Poppins', sans-serif;
 }
@@ -31,7 +42,7 @@ p{
 
 /* Header, Navbar */
 .header{
-    background: #73D2DE;
+    background: var(--primary);
     height: 90px;
     width: 100%;
     position: sticky;
@@ -54,7 +65,7 @@ label.logo i{
 }
 
 label.logo{
-    color: #D81159;
+    color: var(--color2);
     font-size: 25px;
     line-height: 80px;
     padding-left: 10px;
@@ -73,8 +84,9 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #D81159;
+    color: var(--color2);
     font-size: 17px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -85,7 +97,7 @@ nav ul li a:hover{
 
 .checkbtn i{
     font-size: 30px;
-    color: #D81159;
+    color: var(--color2);
 }
 
 .checkbtn{
@@ -157,7 +169,7 @@ nav ul li a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2C3E50;
+        background: var(--color4);
         top: 80px;
         left: -100%;
         text-align: center;
@@ -170,7 +182,7 @@ nav ul li a:hover{
         display: block;
     }
     nav ul li a:hover{
-        color: #73D2DE;
+        color: var(--primary);
     }
 
     #check:checked ~ ul{
@@ -183,7 +195,7 @@ nav ul li a:hover{
 /* SOBRE MIM CONTAINER */
 .about-me-container{
     padding: 2%;
-    background: #218380;
+    background: var(--color3);
     color: aliceblue;
     display: flex;
     align-items: center;
@@ -198,13 +210,13 @@ nav ul li a:hover{
 
 
 .about-me-container .row img{
-    max-width: 350px;
+    max-width: 250px;
     height: auto;
     border-radius: 50%;
 }
 
 .about-me-txt a{
-    color: #D81159;
+    color: var(--color2);
 }
 
 .about-me-txt{
@@ -252,14 +264,14 @@ div.card{
 }
 
 .bi-display::before{
-    color: #73D2DE;
-    background: #D81159;
+    color: var(--primary);
+    background: var(--color2);
 }
 
 
 .bi-server::before{
-    color: #D81159;
-    background: #73D2DE;
+    color: var(--color2);
+    background: var(--primary);
 }
 
 
@@ -274,14 +286,14 @@ div.card{
 /* Card frontend */
 .front-card{
     width: 100%;
-    background: #73D2DE;
-    color: #D81159;
+    background: var(--primary);
+    color: var(--color2);
 }
 /* Card backend */
 .back-card{
     width: 100%;
-    background: #D81159;
-    color: #73D2DE  ;
+    background: var(--color2);
+    color: var(--primary)  ;
 }
 
 
@@ -290,18 +302,18 @@ div.card li i{
     font-size: 10px;
     padding: 0;
     margin: 0;
-    color: #2C3E50;
+    color: var(--color4);
 }
 
 div.card li i{
     position: static;
     margin-right: 5px;
     font-size: 1em;
-    color: #D81159;
+    color: var(--color2);
 }
 
 div.card.back-card li i{
-    color: #73D2DE;
+    color: var(--primary);
 }
 .card i{
     position: relative;
@@ -350,7 +362,7 @@ ul.project-menu{
 .project-menu a{
     margin: 0 4px;
     font-size: 18px;
-    color: #2C3E50;
+    color: var(--color4);
     padding: 7px 5px;
     border-radius: 5px;
     transition: .2s;
@@ -366,7 +378,7 @@ ul.project-menu{
 }
 
 .active{
-    background-color: #73D2DE;
+    background-color: var(--primary);
 }
 
 /* PORTIFÓLIO CARDS */
@@ -494,7 +506,7 @@ ul.project-menu{
 /* CONTATO */
 .contact-container{
     width: 100%;
-    background: #2C3E50;
+    background: var(--color4);
     height: 500px;
     color: #FFF;
 }
@@ -578,7 +590,7 @@ textarea:focus, input:focus{
 }
 
 .contact-form input[type=submit]{
-    background-color: #73D2DE;
+    background-color: var(--primary);
     color: #FFF;
     border: none;
     font-size: 20px;
