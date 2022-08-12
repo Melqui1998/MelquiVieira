@@ -67,6 +67,15 @@ let projects = [
         link: 'https://clickjogos.com/',
         bgImage: 'forca.jpg'
     },
+    {
+        nome: 'Flex Turismos',
+        tecnologias: ['HTML', 'CSS','Javascript'],
+        tipo: TipoProjeto[TipoProjeto.LandingPage],
+        descricao: 'Projeto prático de landing page para empresa de ' +
+            'turismos aplicando os conhecimentos em CSS Flexbox e Responsividade',
+        link: 'https://melquiv.github.io/FlexTurismos/',
+        bgImage: 'flex_tur.jpg'
+    },
 ];
 function loadProjects() {
     var _a, _b;
@@ -124,8 +133,9 @@ function loadProjects() {
             case ('Page'):
                 (_b = document.querySelector('#pages')) === null || _b === void 0 ? void 0 : _b.appendChild(div2);
                 break;
-            // case('LandingPage'):
-            //     document.querySelector('#landing-pages')?.appendChild(div2);
+            case('LandingPage'):
+                document.querySelector('#landing-pages')?.appendChild(div2);
+                break;
             // case('ComponenteWeb'):
             //     document.querySelector('#componentes-web')?.appendChild(div2);
             // case('Clone'):

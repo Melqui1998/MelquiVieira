@@ -608,6 +608,14 @@ textarea:focus, input:focus{
 }
 
 
+/* FOOOTER */
+.footer{
+    background: var(--color4);
+    color: #FFF;
+    text-align: center;
+}
+
+
 /* AJUSTES RESPOSNSIVIDADE */
 @media(max-width: 1100px){
 
