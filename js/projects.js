@@ -76,6 +76,15 @@ let projects = [
         link: 'https://melquiv.github.io/FlexTurismos/',
         bgImage: 'flex_tur.jpg'
     },
+    {
+        nome: 'Flex Turismos',
+        tecnologias: ['HTML', 'CSS','Bootstrap'],
+        tipo: TipoProjeto[TipoProjeto.LandingPage],
+        descricao: 'Projeto prático de landing page para artes ' +
+            'de rua faznedo uso da biblioteca bootstrap',
+        link: 'https://melquiv.github.io/PraticaFront-Art/',
+        bgImage: 'proj_art.jpg'
+    },
 ];
 function loadProjects() {
     var _a, _b;
