@@ -67,6 +67,15 @@ let projects = [
         link: 'https://melquiv.github.io/PraticaFront-Art/',
         bgImage: 'proj_art.JPG'
     },
+    {
+        nome: 'AllStar Semijóias',
+        tecnologias: ['HTML', 'CSS','Bootstrap', 'Mobile First'],
+        tipo: TipoProjeto[TipoProjeto.Page],
+        descricao: 'Website de estudo, loja de semijóias ' +
+            'desenvolvido em bootstrap e desenvolvido sob o conceito de Mobile First',
+        link: 'https://melquiv.github.io/AllStarSemijoias/',
+        bgImage: 'allstar_semij.jpg'
+    },
 ];
 function loadProjects() {
     var _a, _b;
