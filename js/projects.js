@@ -40,33 +40,15 @@ var TipoProjeto;
 })(TipoProjeto || (TipoProjeto = {}));
 ;
 let projects = [
-    {
-        nome: 'Adimo Imóveis',
-        tecnologias: ['html', 'css', 'javascript', 'node.js'],
-        tipo: TipoProjeto[TipoProjeto.Page],
-        descricao: 'Projeto em grupo da faculdade. Site instituicional para imobiliária ' +
-            'desenvolvido desde os logos e paleta de cores.',
-        link: 'https://pages.github.com/',
-        bgImage: 'cpm22.jpg'
-    },
-    {
-        nome: 'Quiz SQL',
-        tecnologias: ['HTLM', 'CSS', 'TypeScript', 'Javascript'],
-        tipo: TipoProjeto[TipoProjeto.Game],
-        descricao: 'Teste com 5 perguntas para avaliar seus conhecimentos' +
-            'na linguagem SQL.',
-        link: 'https://friv.com/',
-        bgImage: 'quiz.png'
-    },
-    {
-        nome: 'Jogo da Forca',
-        tecnologias: ['HTLM', 'CSS', 'TypeScript', 'Javascript'],
-        tipo: TipoProjeto[TipoProjeto.Game],
-        descricao: 'O Jogo da forca clássico, tente adivinhar qual a palavra' +
-            'antes de ser enforcado',
-        link: 'https://clickjogos.com/',
-        bgImage: 'forca.jpg'
-    },
+    // {
+    //     nome: 'Quiz SQL',
+    //     tecnologias: ['HTLM', 'CSS', 'TypeScript', 'Javascript'],
+    //     tipo: TipoProjeto[TipoProjeto.Game],
+    //     descricao: 'Teste com 5 perguntas para avaliar seus conhecimentos' +
+    //         'na linguagem SQL.',
+    //     link: 'https://friv.com/',
+    //     bgImage: 'quiz.png'
+    // },
     {
         nome: 'Flex Turismos',
         tecnologias: ['HTML', 'CSS','Javascript'],
@@ -81,7 +63,7 @@ let projects = [
         tecnologias: ['HTML', 'CSS','Bootstrap'],
         tipo: TipoProjeto[TipoProjeto.LandingPage],
         descricao: 'Projeto prático de landing page para artes ' +
-            'de rua faznedo uso da biblioteca bootstrap',
+            'de rua fazendo uso da biblioteca bootstrap',
         link: 'https://melquiv.github.io/PraticaFront-Art/',
         bgImage: 'proj_art.jpg'
     },
