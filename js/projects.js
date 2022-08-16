@@ -56,7 +56,7 @@ let projects = [
         descricao: 'Projeto prático de landing page para empresa de ' +
             'turismos aplicando os conhecimentos em CSS Flexbox e Responsividade',
         link: 'https://melquiv.github.io/FlexTurismos/',
-        bgImage: 'flex_tur.jpg'
+        bgImage: 'flex_tur.JPG'
     },
     {
         nome: 'Flex Turismos',
@@ -65,7 +65,7 @@ let projects = [
         descricao: 'Projeto prático de landing page para artes ' +
             'de rua fazendo uso da biblioteca bootstrap',
         link: 'https://melquiv.github.io/PraticaFront-Art/',
-        bgImage: 'proj_art.jpg'
+        bgImage: 'proj_art.JPG'
     },
 ];
 function loadProjects() {
