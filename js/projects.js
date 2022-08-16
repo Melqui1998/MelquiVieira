@@ -80,7 +80,7 @@ function loadProjects() {
         projectImgDiv.className = 'project-image';
         //img
         let img = document.createElement('img');
-        img.src = 'img/' + bgImage;
+        img.src = './img/' + bgImage;
         //div card-overlay
         let cardOverlay = document.createElement('div');
         cardOverlay.className = 'card-overlay';
