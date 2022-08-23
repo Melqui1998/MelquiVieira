@@ -11,9 +11,9 @@
 }
 
 :root{
-    --primary: #73D2DE;
-    --color2: #D81159;
-    --color3: #218380;
+    --primary: #3943B7;
+    --color2: #ffffff;
+    --color3: #78c0e0;
     --color4: #2C3E50;
     --myblack: rgb(88, 103, 124);
 }
@@ -23,9 +23,10 @@
 
 body{
     color: var(--myblack);
-    background: #f5f6f8;
+    background: #f7f4f4;
     font-family: 'Poppins', sans-serif;
 }
+
 
 h2{
     font-size: 25px;
@@ -92,7 +93,7 @@ nav ul li a{
 
 
 nav ul li a:hover{
-    color: #df84a6;
+    color: #78C0E0;
 }
 
 .checkbtn i{
@@ -205,7 +206,7 @@ nav ul li a:hover{
 }
 
 .about-me-container .row{
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 
@@ -216,7 +217,8 @@ nav ul li a:hover{
 }
 
 .about-me-txt a{
-    color: var(--color2);
+    font-weight: bold;
+    color: var(--primary);
 }
 
 .about-me-txt{
@@ -252,26 +254,24 @@ div.knowledge-container{
 
 /* Ambos os Cards */
 div.card{
-    /* color: #FFF; */
     height: 100%;
 }
 
 .bi-server::before,
 .bi-display::before{
-    /* background: #218380; */
     padding: 20px;
     border-radius: 50%;
 }
 
 .bi-display::before{
-    color: var(--primary);
-    background: var(--color2);
+    color: var(--color2);
+    background: var(--primary);
 }
 
 
 .bi-server::before{
     color: var(--color2);
-    background: var(--primary);
+    background: var(--color3);
 }
 
 
@@ -292,8 +292,8 @@ div.card{
 /* Card backend */
 .back-card{
     width: 100%;
-    background: var(--color2);
-    color: var(--primary)  ;
+    background: var(--color3);
+    color: var(--color2)  ;
 }
 
 
@@ -313,7 +313,7 @@ div.card li i{
 }
 
 div.card.back-card li i{
-    color: var(--primary);
+    color: var(--color2);
 }
 .card i{
     position: relative;
@@ -331,7 +331,7 @@ div.card.back-card li i{
     text-align: center;
     margin-bottom: 10px;
     font-size: 20px;
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
@@ -341,7 +341,6 @@ div.card.back-card li i{
 .projects-container{
     max-width: 1800px;
     margin: 0 auto;
-    /* border: 1px solid red; */
     margin-bottom: 50px;
     text-align: center;
 }
@@ -349,6 +348,12 @@ div.card.back-card li i{
     max-width: 900px;
     margin: 0 auto;
 }
+
+.projects-text a{
+    color: #150578;
+    font-weight: bold;
+}
+
 
 ul.project-menu{
     margin: 30px auto;
@@ -366,6 +371,7 @@ ul.project-menu{
     padding: 7px 5px;
     border-radius: 5px;
     transition: .2s;
+    font-weight: 600;
 }
 
 .project-menu li{
@@ -378,7 +384,7 @@ ul.project-menu{
 }
 
 .active{
-    background-color: var(--primary);
+    background-color: var(--color3);
 }
 
 /* PORTIFÓLIO CARDS */
@@ -406,8 +412,10 @@ ul.project-menu{
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    background-color: aliceblue;
+    /* height: 50px; */
+    height: 90px; /*Se quebrar foi aqui*/
+    background-color: #dfdfdf;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,7 +423,7 @@ ul.project-menu{
 }
 
 .project-footer h3{
-    color: #000;
+    color: #474747;
 }
 
 .project-footer li h3{
@@ -439,9 +447,9 @@ ul.project-menu{
 }
 
 .project-footer li{
-    background: gray;
-    padding: 1px 4px;
-    border-radius: 10px;
+    background: var(--color3);
+    padding: 0px 4px;
+    border-radius: 15px;
 }
 
 .project-footer li {
@@ -487,10 +495,7 @@ ul.project-menu{
     height: 100%;
 }
 
-.card-overlay p,
-.card-overlay h3{
-    
-}
+
 
 .card-overlay a{
     font-size: 17px;
@@ -536,7 +541,6 @@ ul.project-menu{
 .contact-content{
     max-width: 1400px;
     height: 100%;
-    /* border: 1px solid white; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -613,6 +617,7 @@ textarea:focus, input:focus{
     background: var(--color4);
     color: #FFF;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 
