@@ -36,7 +36,7 @@ var TipoProjeto;
     TipoProjeto[TipoProjeto["Page"] = 1] = "Page";
     TipoProjeto[TipoProjeto["LandingPage"] = 2] = "LandingPage";
     TipoProjeto[TipoProjeto["ComponenteWeb"] = 3] = "ComponenteWeb";
-    TipoProjeto[TipoProjeto["Clone"] = 4] = "Clone";
+    TipoProjeto[TipoProjeto["Clone"] = 4] = "Ultilitario";
 })(TipoProjeto || (TipoProjeto = {}));
 ;
 let projects = [
@@ -76,6 +76,17 @@ let projects = [
         link: 'https://melquiv.github.io/AllStarSemijoias/',
         bgImage: 'allstar_semij.jpg'
     },
+    {
+        nome: 'Todo List',
+        tecnologias: ['HTML', 'CSS','Javascript'],
+        tipo: TipoProjeto[TipoProjeto.Clone],
+        descricao: 'Projeto em javascript ultilitário.' +
+            'Lista de tarefas em que pode adicionar, excluir e marcar tarefas como concluída.' + 
+            'Nesse projeto ultilizei muitos conhecimentos em JS DOM',
+        link: 'https://melquiv.github.io/TasksDragJS/',
+        bgImage: 'todo_list.jpg'
+    },
+
 ];
 function loadProjects() {
     var _a, _b;
@@ -138,8 +149,8 @@ function loadProjects() {
                 break;
             // case('ComponenteWeb'):
             //     document.querySelector('#componentes-web')?.appendChild(div2);
-            // case('Clone'):
-            //     document.querySelector('#clones')?.appendChild(div2);
+            case('Ultilitario'):
+                document.querySelector('#clones')?.appendChild(div2);
         }
     }
 }
